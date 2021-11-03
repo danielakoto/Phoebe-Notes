@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    display: flexbox;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 20px;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.336);
+    font-family: 'Times New Roman', Times, serif; 
+    border: solid rgb(124, 124, 124) 0.5px; 
+    display: inline-table;
+    margin: 1px;
+}
+
+#vtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+#vvalue {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+.themic {
+    width: 20px;
+    margin-bottom: 3px;
+}
+
+.thetitle, .thenote {
+    margin: 0; 
+    border: none;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    color: black;
+}
+.thetitle {
+    width: 300px;
+    height: 35px;
+    font-weight: bold;
+}
+.thenote {
+    width: 267px;
+}
+
+.thetitle:hover, .thenote:hover {
+    color: black;
+}
+.thetitle:active, .thenote:active {
+    border: none;
+}
+
+#createThing {
+    margin-bottom: 1px; 
+    height: 40px; 
+    width: 300px;
+    background-color: lightcoral;
+    border: solid lightcoral 1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#createThing:hover {
+    font-size: 18px;
+}
+#createThing:active {
+    border: none;
+}
+#clear {
+    background-color: white;
+    color: rgb(95, 95, 95); 
+    border-radius: 5px; 
+    border-color: rgba(240, 128, 128, 0.178);
+    font-size: 14px;
+}
+
+.username {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.circle {
+    z-index: -1;
+    position: fixed;
+    background-color: rgba(240, 128, 128, 0.192);
+    box-shadow: 0 0 800px 0 rgba(240, 128, 128, 0.274);
+    padding: 500px;
+    top: -20%;
+    left: 80%;
+    border-radius: 50%;
+    animation-duration: 25s;
+    animation-name: changecolorB;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle2 {
+    z-index: -1;
+    position: fixed;
+    background-color: rgba(83, 187, 221, 0.185);
+    box-shadow: 0 0 800px 0 rgba(83, 187, 221, 0.342);
+    padding: 500px;
+    top: 0%;
+    left: -25%;
+    border-radius: 50%;
+    animation-name: changecolorA;
+    animation-duration: 50s ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle3 {
+    z-index: -1;
+    position: fixed;
+    background-color: rgba(240, 128, 128, 0.192);
+    box-shadow: 0 0 800px 0 rgba(240, 128, 128, 0.274);
+    padding: 500px;
+    top: 80%;
+    left: 40%;
+    border-radius: 50%;
+    animation-name: changecolorC;
+    animation-duration: 30s ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.logo {
+    position: absolute;
+    top: 3%;
+    left: 90%;
+    width: 60px;
+    height: 60px;
+}
+.spanmic {
+    cursor: pointer;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+@keyframes changecolorA {
+    from {
+        background-color: rgba(83, 187, 221, 0.185);
+        box-shadow: 0 0 800px 0 rgba(83, 187, 221, 0.342);
+    }
+    to {
+        background-color: rgba(240, 128, 128, 0.192);
+        box-shadow: 0 0 800px 0 rgba(240, 128, 128, 0.274);
+    }
+}
+
+@keyframes changecolorB {
+    from {
+        background-color: rgba(240, 128, 128, 0.192);
+        box-shadow: 0 0 800px 0 rgba(240, 128, 128, 0.274);
+    }
+    to {
+        background-color: rgba(83, 187, 221, 0.185);
+        box-shadow: 0 0 800px 0 rgba(83, 187, 221, 0.342);
+    }
+}
+
+@keyframes changecolorC {
+    from {
+        background-color: rgba(235, 227, 114, 0.185);
+        box-shadow: 0 0 800px 0 rgba(221, 212, 83, 0.329);
+    }
+    to {
+        background-color: rgba(233, 180, 66, 0.151);
+        box-shadow: 0 0 800px 0 rgba(233, 222, 66, 0.253);
+    }
+}
