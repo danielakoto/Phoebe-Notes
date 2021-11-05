@@ -110,10 +110,10 @@ li {
     top: -20%;
     left: 80%;
     border-radius: 50%;
-    animation-duration: 20s;
+    /* animation-duration: 20s;
     animation-name: changecolorB;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
 .circle2 {
@@ -125,10 +125,10 @@ li {
     top: 0%;
     left: -25%;
     border-radius: 50%;
-    animation-name: changecolorA;
+    /* animation-name: changecolorA;
     animation-duration: 20s ;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 .circle3 {
     z-index: -1;
@@ -139,10 +139,10 @@ li {
     top: 80%;
     left: 40%;
     border-radius: 50%;
-    animation-name: changecolorC;
+    /* animation-name: changecolorC;
     animation-duration: 20s ;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
 
@@ -166,7 +166,7 @@ textarea::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 
-@keyframes changecolorA {
+/* @keyframes changecolorA {
     from {
         background-color: rgba(83, 187, 221, 0.185);
         box-shadow: 0 0 800px 0 rgba(83, 187, 221, 0.342);
@@ -197,4 +197,4 @@ textarea::-webkit-scrollbar-thumb {
         background-color: rgba(233, 180, 66, 0.151);
         box-shadow: 0 0 800px 0 rgba(233, 222, 66, 0.253);
     }
-}
+} */
